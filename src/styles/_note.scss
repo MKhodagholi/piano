@@ -1,0 +1,36 @@
+.note {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.note.black {
+  background-color: #000;
+  height: 100px;
+  position: absolute;
+  margin: 1px;
+  margin-left: -10px;
+  box-shadow: inset 0 4px 0 2px rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+
+  &:actvie {
+    background-color: #1b1b1b;
+    box-shadow: inset 0 -4px 0 2px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.note.white {
+  background-color: #fff;
+  width: 60px;
+  height: 200px;
+  margin: 1px;
+  border: 1px solid black;
+  box-shadow: inset 0 -4px 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  &:active {
+    background-color: #ededed;
+    box-shadow: inset 0 4px 0 4px rgba(0, 0, 0, 0.5);
+  }
+}
